@@ -1,0 +1,4 @@
+Key store password : 12345678
+
+Key alias : preschoolmath
+Password : 12345678

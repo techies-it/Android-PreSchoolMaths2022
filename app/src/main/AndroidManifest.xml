@@ -1,0 +1,95 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest package="techies.it.preschoolmaths"
+          xmlns:android="http://schemas.android.com/apk/res/android">
+
+    <uses-permission android:name="android.permission.INTERNET"/>
+    <!-- if you want to load images from a file OR from the internet -->
+    <uses-permission android:name="android.permission.READ_EXTERNAL_STORAGE"/>
+
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/launcher_600"
+        android:label="@string/app_name"
+        android:roundIcon="@drawable/launcher_600"
+        android:supportsRtl="true"
+        android:alwaysRetainTaskState="true"
+        android:theme="@style/AppTheme.NoActionBar">
+        <activity
+            android:name=".ui.MainActivity"
+            android:screenOrientation="sensorLandscape"
+            android:exported="true">
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN"/>
+
+                <category android:name="android.intent.category.LAUNCHER"/>
+            </intent-filter>
+        </activity>
+        <activity
+            android:name=".ui.GameLevels"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity"/>
+        </activity>
+        <activity
+            android:name=".ui.GameLevel1"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName=".ui.GameLevels"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.GameLevels"/>
+        </activity>
+        <activity
+            android:name=".ui.GameLevel2"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName=".ui.GameLevels"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.GameLevels"/>
+        </activity>
+        <activity
+            android:name=".ui.GameLevel3"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName=".ui.GameLevels"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.GameLevels"/>
+        </activity>
+
+        <service android:name=".services.SoundService"/>
+
+        <activity
+            android:name=".ui.GameLevel4"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName=".ui.GameLevels"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.GameLevels"/>
+        </activity>
+        <activity
+            android:name=".ui.InstructionsScreen"
+            android:alwaysRetainTaskState="true"
+            android:parentActivityName=".ui.MainActivity"
+            android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.NoActionBar">
+            <meta-data
+                android:name="android.support.PARENT_ACTIVITY"
+                android:value=".ui.MainActivity"/>
+        </activity>
+
+
+    </application>
+
+</manifest>

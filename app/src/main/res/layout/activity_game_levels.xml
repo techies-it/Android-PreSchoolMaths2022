@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GameLevels">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/yellow_bg_320"/>
+
+    <ImageButton
+        android:id="@+id/backBT"
+        android:layout_width="@dimen/_38sdp"
+        android:layout_height="@dimen/_42sdp"
+        android:layout_marginLeft="@dimen/_16sdp"
+        android:layout_marginStart="@dimen/_16sdp"
+        android:layout_marginTop="@dimen/_22sdp"
+        android:background="@drawable/back_button_320"/>
+
+    <ImageView
+        android:id="@+id/chooseLevelBanner"
+        android:layout_width="@dimen/_224sdp"
+        android:layout_height="@dimen/_126sdp"
+        android:layout_marginTop="@dimen/_16sdp"
+        android:layout_centerHorizontal="true"
+        android:src="@drawable/choose_level_banner_320"/>
+
+    <LinearLayout
+        android:id="@+id/baseHolderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true"
+        android:layout_marginBottom="@dimen/_6sdp"
+        android:layout_centerHorizontal="true"
+        android:orientation="horizontal">
+
+        <ImageButton
+            android:id="@+id/btLevel1"
+            android:layout_width="@dimen/_104sdp"
+            android:layout_height="@dimen/_132sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/level1_button_320"/>
+
+        <ImageButton
+            android:id="@+id/btLevel2"
+            android:layout_width="@dimen/_104sdp"
+            android:layout_height="@dimen/_132sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/level2_button_320"/>
+
+
+        <ImageButton
+            android:id="@+id/btLevel3"
+            android:layout_width="@dimen/_104sdp"
+            android:layout_height="@dimen/_132sdp"
+            android:layout_gravity="bottom"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:background="@drawable/level3_button_320"/>
+
+        <ImageButton
+            android:id="@+id/btLevel4"
+            android:layout_width="@dimen/_104sdp"
+            android:layout_height="@dimen/_132sdp"
+            android:layout_gravity="bottom"
+            android:background="@drawable/level4_button_320"/>
+
+    </LinearLayout>
+
+
+</RelativeLayout>

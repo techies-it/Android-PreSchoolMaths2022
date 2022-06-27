@@ -1,0 +1,55 @@
+{
+  "project_info": {
+    "project_number": "148364216860",
+    "firebase_url": "https://preschoolmaths.firebaseio.com",
+    "project_id": "preschoolmaths",
+    "storage_bucket": "preschoolmaths.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:148364216860:android:eff749d1028510b8",
+        "android_client_info": {
+          "package_name": "it.techies.preschoolmaths"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "148364216860-3p7dgfqoa4fm6udahthq7ibqtjdiabok.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "it.techies.preschoolmaths",
+            "certificate_hash": "C676E451CA675B9671C4487763986E4746FD7292"
+          }
+        },
+        {
+          "client_id": "148364216860-279fadjlvekumbpil0bd1jss81i0qcj7.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyBF4x7ULz01ROoAfR342pc-ogPdnJEasjc"
+        }
+      ],
+      "services": {
+        "analytics_service": {
+          "status": 1
+        },
+        "appinvite_service": {
+          "status": 2,
+          "other_platform_oauth_client": [
+            {
+              "client_id": "148364216860-279fadjlvekumbpil0bd1jss81i0qcj7.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        },
+        "ads_service": {
+          "status": 2
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}

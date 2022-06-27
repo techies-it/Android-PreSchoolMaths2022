@@ -1,0 +1,93 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.GameLevels">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/yellow_bg_600"/>
+
+    <ImageButton
+        android:id="@+id/backBT"
+        android:layout_width="@dimen/_27sdp"
+        android:layout_height="@dimen/_27sdp"
+        android:layout_marginLeft="@dimen/_12sdp"
+        android:layout_marginStart="@dimen/_12sdp"
+        android:layout_marginTop="@dimen/_12sdp"
+        android:background="@drawable/back_button_600"/>
+
+    <LinearLayout
+        android:id="@+id/baseHolderLayout"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_centerInParent="true"
+        android:orientation="horizontal">
+
+        <ImageView
+            android:layout_width="@dimen/_180sdp"
+            android:layout_height="@dimen/_189sdp"
+            android:layout_gravity="center_vertical"
+            android:layout_marginEnd="@dimen/_16sdp"
+            android:layout_marginRight="@dimen/_16sdp"
+            android:src="@drawable/cyl_600"/>
+
+        <LinearLayout
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:layout_gravity="center_vertical"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginBottom="@dimen/_8sdp"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btLevel1"
+                    android:layout_width="@dimen/_81sdp"
+                    android:layout_height="@dimen/_112sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/level1_button_600"/>
+
+                <ImageButton
+                    android:id="@+id/btLevel2"
+                    android:layout_width="@dimen/_81sdp"
+                    android:layout_height="@dimen/_112sdp"
+                    android:background="@drawable/level2_button_600"/>
+
+            </LinearLayout>
+
+            <LinearLayout
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:orientation="horizontal">
+
+                <ImageButton
+                    android:id="@+id/btLevel3"
+                    android:layout_width="@dimen/_81sdp"
+                    android:layout_height="@dimen/_112sdp"
+                    android:layout_marginEnd="@dimen/_16sdp"
+                    android:layout_marginRight="@dimen/_16sdp"
+                    android:background="@drawable/level3_button_600"/>
+
+                <ImageButton
+                    android:id="@+id/btLevel4"
+                    android:layout_width="@dimen/_81sdp"
+                    android:layout_height="@dimen/_112sdp"
+                    android:background="@drawable/level4_button_600"/>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+
+    </LinearLayout>
+
+</RelativeLayout>

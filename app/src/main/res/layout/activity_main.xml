@@ -1,0 +1,40 @@
+<?xml version="1.0" encoding="utf-8"?>
+<RelativeLayout
+    xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".ui.MainActivity">
+
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:scaleType="fitXY"
+        android:src="@drawable/screen_level1_320"/>
+
+    <RelativeLayout
+        android:id="@+id/btHolderLayout"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_alignParentBottom="true">
+
+        <ImageButton
+            android:id="@+id/instructions"
+            android:layout_width="@dimen/_82sdp"
+            android:layout_height="@dimen/_34sdp"
+            android:layout_centerHorizontal="true"
+            android:layout_below="@+id/btPlay"
+            android:layout_marginBottom="@dimen/_14sdp"
+            android:layout_marginTop="@dimen/_4sdp"
+            android:background="@drawable/instruction_button_320"/>
+
+        <ImageButton
+            android:id="@+id/btPlay"
+            android:layout_width="@dimen/_114sdp"
+            android:layout_height="@dimen/_40sdp"
+            android:layout_centerHorizontal="true"
+            android:background="@drawable/play_buttons_320"/>
+
+    </RelativeLayout>
+
+</RelativeLayout>
