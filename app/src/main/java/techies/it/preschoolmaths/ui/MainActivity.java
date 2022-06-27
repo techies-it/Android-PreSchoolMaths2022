@@ -20,7 +20,6 @@ public class MainActivity extends AppCompatActivity implements View.OnClickListe
     Context mContext = this;
     private int currentApiVersion;
 
-
     @Bind(R.id.instructions)
     ImageButton mInstructions;
 
