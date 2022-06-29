@@ -16,11 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/backBT"
-        android:layout_marginLeft="@dimen/_104sdp"
         android:layout_marginStart="@dimen/_104sdp"
         android:layout_marginTop="-140dp"
-        android:layout_toEndOf="@+id/backBT"
-        android:layout_toRightOf="@+id/backBT">
+        android:layout_toEndOf="@+id/backBT">
 
         <ImageView
             android:id="@+id/sunRaysIV"
@@ -45,9 +43,7 @@
         android:layout_height="@dimen/_28sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_marginEnd="-600dp"
-        android:layout_marginRight="-600dp"
         android:src="@drawable/cloud0_600"/>
 
     <ImageView
@@ -56,10 +52,8 @@
         android:layout_height="@dimen/_32sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_marginBottom="@dimen/_16sdp"
-        android:layout_marginLeft="@dimen/_88sdp"
         android:layout_marginStart="@dimen/_88sdp"
         android:layout_toEndOf="@+id/cloud0IV"
-        android:layout_toRightOf="@+id/cloud0IV"
         android:src="@drawable/cloud6_600"/>
 
     <ImageView
@@ -67,10 +61,8 @@
         android:layout_width="@dimen/_91sdp"
         android:layout_height="@dimen/_51sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/cloud0IV"
         android:layout_marginEnd="-300dp"
-        android:layout_marginRight="-300dp"
         android:src="@drawable/cloud1_600"/>
 
     <ImageView
@@ -78,10 +70,8 @@
         android:layout_width="@dimen/_59sdp"
         android:layout_height="@dimen/_35sdp"
         android:layout_below="@+id/backBT"
-        android:layout_marginLeft="@dimen/_204sdp"
         android:layout_marginStart="@dimen/_204sdp"
         android:layout_toEndOf="@+id/cloud1IV"
-        android:layout_toRightOf="@+id/cloud1IV"
         android:src="@drawable/cloud7_600"/>
 
     <ImageView
@@ -89,10 +79,8 @@
         android:layout_width="@dimen/_21sdp"
         android:layout_height="@dimen/_12sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="-500dp"
-        android:layout_marginRight="-500dp"
         android:src="@drawable/cloud3_600"/>
 
 
@@ -100,7 +88,6 @@
         android:id="@+id/backBT"
         android:layout_width="@dimen/_27sdp"
         android:layout_height="@dimen/_27sdp"
-        android:layout_marginLeft="@dimen/_12sdp"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:background="@drawable/back_button_600"/>
@@ -121,7 +108,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_16sdp"
-            android:layout_marginRight="@dimen/_16sdp"
             android:layout_marginTop="@dimen/_20sdp">
 
             <ImageView
@@ -134,9 +120,7 @@
                 android:layout_width="@dimen/_158sdp"
                 android:layout_height="@dimen/_112sdp"
                 android:layout_alignEnd="@+id/smallBoardIV"
-                android:layout_alignRight="@+id/smallBoardIV"
                 android:layout_marginEnd="@dimen/_8sdp"
-                android:layout_marginRight="@dimen/_8sdp"
                 android:layout_marginTop="@dimen/_16sdp">
 
                 <TextView
@@ -146,6 +130,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:gravity="center"
+                    android:fontFamily="@font/cabin_sketch_bold"
                     android:text="Add Stars"
                     android:textColor="@android:color/white"
                     android:textSize="26sp"/>
@@ -156,7 +141,7 @@
                     android:layout_below="@+id/smallBoardLabel"
                     android:layout_centerHorizontal="true"
                     android:paddingEnd="@dimen/_10sdp"
-                    android:paddingRight="@dimen/_10sdp"
+                    android:paddingStart="@dimen/_10sdp"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:orientation="horizontal">
 
@@ -259,6 +244,7 @@
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
                         android:layout_margin="@dimen/_2sdp"
+                        android:fontFamily="@font/cabin_sketch_bold"
                         android:text="+"
                         android:textColor="@android:color/white"
                         android:textSize="75sp"/>
@@ -371,6 +357,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginTop="@dimen/_72sdp"
+            android:fontFamily="@font/cabin_sketch_bold"
             android:text="="
             android:textColor="@android:color/white"
             android:textSize="110sp"/>
@@ -379,8 +366,7 @@
             android:layout_width="wrap_content"
             android:layout_height="@dimen/_186sdp"
             android:layout_marginTop="@dimen/_24sdp"
-            android:layout_marginStart="@dimen/_16sdp"
-            android:layout_marginLeft="@dimen/_16sdp">
+            android:layout_marginStart="@dimen/_16sdp">
 
             <LinearLayout
                 android:id="@+id/linearLayoutNumbers"
@@ -486,9 +472,7 @@
         android:id="@+id/boyIV"
         android:layout_width="@dimen/_93sdp"
         android:layout_height="@dimen/_100sdp"
-        android:layout_alignLeft="@+id/boardsLayout"
         android:layout_alignStart="@+id/boardsLayout"
-        android:layout_marginLeft="@dimen/_164sdp"
         android:layout_marginStart="@dimen/_164sdp"
         android:layout_alignParentBottom="true"
         android:layout_marginBottom="@dimen/_16sdp"
@@ -499,10 +483,8 @@
         android:layout_width="@dimen/_45sdp"
         android:layout_height="@dimen/_30sdp"
         android:layout_alignBottom="@+id/boyIV"
-        android:layout_alignLeft="@+id/boyIV"
         android:layout_alignStart="@+id/boyIV"
         android:layout_marginBottom="@dimen/_4sdp"
-        android:layout_marginLeft="@dimen/_96sdp"
         android:layout_marginStart="@dimen/_96sdp"
         android:background="@drawable/next_button_600"/>
 

@@ -16,11 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/backBT"
-        android:layout_marginLeft="@dimen/_104sdp"
         android:layout_marginStart="@dimen/_104sdp"
         android:layout_marginTop="-140dp"
-        android:layout_toEndOf="@+id/backBT"
-        android:layout_toRightOf="@+id/backBT">
+        android:layout_toEndOf="@+id/backBT">
 
         <ImageView
             android:id="@+id/sunRaysIV"
@@ -45,9 +43,7 @@
         android:layout_height="@dimen/_38sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_marginEnd="-600dp"
-        android:layout_marginRight="-600dp"
         android:src="@drawable/cloud0_600"/>
 
     <ImageView
@@ -56,10 +52,8 @@
         android:layout_height="@dimen/_40sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_marginBottom="@dimen/_16sdp"
-        android:layout_marginLeft="@dimen/_88sdp"
         android:layout_marginStart="@dimen/_88sdp"
         android:layout_toEndOf="@+id/cloud0IV"
-        android:layout_toRightOf="@+id/cloud0IV"
         android:src="@drawable/cloud6_600"/>
 
     <ImageView
@@ -67,10 +61,8 @@
         android:layout_width="@dimen/_99sdp"
         android:layout_height="@dimen/_59sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/cloud0IV"
         android:layout_marginEnd="-300dp"
-        android:layout_marginRight="-300dp"
         android:src="@drawable/cloud1_600"/>
 
     <ImageView
@@ -78,10 +70,8 @@
         android:layout_width="@dimen/_67sdp"
         android:layout_height="@dimen/_43sdp"
         android:layout_below="@+id/backBT"
-        android:layout_marginLeft="@dimen/_204sdp"
         android:layout_marginStart="@dimen/_204sdp"
         android:layout_toEndOf="@+id/cloud1IV"
-        android:layout_toRightOf="@+id/cloud1IV"
         android:src="@drawable/cloud7_600"/>
 
     <ImageView
@@ -89,10 +79,8 @@
         android:layout_width="@dimen/_29sdp"
         android:layout_height="@dimen/_20sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="-500dp"
-        android:layout_marginRight="-500dp"
         android:src="@drawable/cloud3_600"/>
 
 
@@ -100,7 +88,6 @@
         android:id="@+id/backBT"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        android:layout_marginLeft="@dimen/_12sdp"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:background="@drawable/back_button_600"/>
@@ -110,10 +97,8 @@
         android:layout_width="@dimen/_45sdp"
         android:layout_height="@dimen/_30sdp"
         android:layout_alignBottom="@+id/boyIV"
-        android:layout_alignLeft="@+id/boyIV"
         android:layout_alignStart="@+id/boyIV"
         android:layout_marginBottom="@dimen/_4sdp"
-        android:layout_marginLeft="@dimen/_86sdp"
         android:layout_marginStart="@dimen/_86sdp"
         android:background="@drawable/next_button_600"/>
 
@@ -123,10 +108,8 @@
         android:layout_height="@dimen/_30sdp"
         android:layout_alignBottom="@+id/boyIV"
         android:layout_alignEnd="@+id/boyIV"
-        android:layout_alignRight="@+id/boyIV"
         android:layout_marginBottom="@dimen/_4sdp"
         android:layout_marginEnd="@dimen/_86sdp"
-        android:layout_marginRight="@dimen/_86sdp"
         android:alpha="0.5"
         android:background="@drawable/previous_button_600"
         android:clickable="false"/>
@@ -142,7 +125,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_28sdp"
-            android:layout_marginRight="@dimen/_28sdp"
             android:layout_marginTop="@dimen/_36sdp">
 
             <ImageView
@@ -155,9 +137,7 @@
                 android:layout_width="@dimen/_162sdp"
                 android:layout_height="@dimen/_112sdp"
                 android:layout_alignEnd="@+id/smallBoardIV"
-                android:layout_alignRight="@+id/smallBoardIV"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:layout_marginRight="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_16sdp">
 
                 <TextView
@@ -167,6 +147,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/cabin_sketch_bold"
                     android:text="Counting 0-99"
                     android:textColor="@android:color/white"
                     android:textSize="24sp"/>
@@ -187,6 +168,7 @@
                         android:layout_gravity="center_vertical"
                         android:gravity="center"
                         android:singleLine="true"
+                        android:fontFamily="@font/cabin_sketch_bold"
                         android:text="0"
                         android:textColor="@android:color/white"
                         android:textSize="100sp"/>
@@ -202,7 +184,6 @@
                         android:layout_width="@dimen/_69sdp"
                         android:layout_height="@dimen/_69sdp"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="@dimen/_4sdp"
                         android:layout_marginStart="@dimen/_4sdp"
                         android:gravity="center"
                         android:orientation="vertical">
@@ -219,6 +200,7 @@
                                 android:layout_margin="@dimen/_2sdp"
                                 android:gravity="center"
                                 android:singleLine="true"
+                                android:fontFamily="@font/cabin_sketch_bold"
                                 android:text="0"
                                 android:textColor="#00ff00"
                                 android:textSize="38sp"/>
@@ -230,6 +212,7 @@
                                 android:layout_margin="@dimen/_2sdp"
                                 android:gravity="center"
                                 android:singleLine="true"
+                                android:fontFamily="@font/cabin_sketch_bold"
                                 android:text="1"
                                 android:textColor="@android:color/white"
                                 android:textSize="38sp"/>
@@ -249,6 +232,7 @@
                                 android:layout_margin="@dimen/_2sdp"
                                 android:gravity="center"
                                 android:singleLine="true"
+                                android:fontFamily="@font/cabin_sketch_bold"
                                 android:text="2"
                                 android:textColor="@android:color/white"
                                 android:textSize="38sp"/>
@@ -260,6 +244,7 @@
                                 android:layout_margin="@dimen/_2sdp"
                                 android:gravity="center"
                                 android:singleLine="true"
+                                android:fontFamily="@font/cabin_sketch_bold"
                                 android:text="3"
                                 android:textColor="@android:color/white"
                                 android:textSize="38sp"/>
@@ -297,10 +282,8 @@
                 android:layout_width="@dimen/_180sdp"
                 android:layout_height="@dimen/_134sdp"
                 android:layout_alignEnd="@+id/bigBoardIV"
-                android:layout_alignRight="@+id/bigBoardIV"
                 android:layout_alignTop="@+id/bigBoardIV"
                 android:layout_marginEnd="@dimen/_4sdp"
-                android:layout_marginRight="@dimen/_4sdp"
                 android:layout_marginTop="@dimen/_18sdp">
 
                 <RelativeLayout
@@ -310,8 +293,6 @@
                     android:splitMotionEvents="false"
                     android:layout_marginBottom="@dimen/_8sdp"
                     android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_7sdp"
-                    android:layout_marginRight="@dimen/_5sdp"
                     android:layout_marginStart="@dimen/_7sdp"
                     android:layout_marginTop="@dimen/_8sdp">
 
@@ -324,6 +305,7 @@
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/_8sdp"
+                    android:fontFamily="@font/cabin_sketch_bold"
                     android:text="Draw Number Here"
                     android:textColor="@android:color/white"
                     android:textSize="24sp"/>
@@ -337,7 +319,6 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_alignBottom="@+id/bigBoardIV"
                 android:layout_marginBottom="@dimen/_72sdp"
-                android:layout_marginLeft="@dimen/_40sdp"
                 android:layout_marginStart="@dimen/_40sdp"
                 android:background="@drawable/duster_button_600"/>
 
@@ -347,10 +328,8 @@
                 android:layout_height="@dimen/_22sdp"
                 android:layout_alignBottom="@+id/bigBoardIV"
                 android:layout_alignEnd="@+id/bigBoardIV"
-                android:layout_alignRight="@+id/bigBoardIV"
                 android:layout_marginBottom="@dimen/_72sdp"
                 android:layout_marginEnd="@dimen/_16sdp"
-                android:layout_marginRight="@dimen/_16sdp"
                 android:background="@drawable/chalk_button_600"/>
 
 

@@ -16,11 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignTop="@+id/backBT"
-        android:layout_marginLeft="@dimen/_104sdp"
         android:layout_marginStart="@dimen/_104sdp"
         android:layout_marginTop="-140dp"
-        android:layout_toEndOf="@+id/backBT"
-        android:layout_toRightOf="@+id/backBT">
+        android:layout_toEndOf="@+id/backBT">
 
         <ImageView
             android:id="@+id/sunRaysIV"
@@ -45,9 +43,7 @@
         android:layout_height="@dimen/_38sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_marginEnd="-600dp"
-        android:layout_marginRight="-600dp"
         android:src="@drawable/cloud0_600"/>
 
     <ImageView
@@ -56,10 +52,8 @@
         android:layout_height="@dimen/_40sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_marginBottom="@dimen/_16sdp"
-        android:layout_marginLeft="@dimen/_88sdp"
         android:layout_marginStart="@dimen/_88sdp"
         android:layout_toEndOf="@+id/cloud0IV"
-        android:layout_toRightOf="@+id/cloud0IV"
         android:src="@drawable/cloud6_600"/>
 
     <ImageView
@@ -67,10 +61,8 @@
         android:layout_width="@dimen/_99sdp"
         android:layout_height="@dimen/_59sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/cloud0IV"
         android:layout_marginEnd="-300dp"
-        android:layout_marginRight="-300dp"
         android:src="@drawable/cloud1_600"/>
 
     <ImageView
@@ -78,10 +70,8 @@
         android:layout_width="@dimen/_67sdp"
         android:layout_height="@dimen/_43sdp"
         android:layout_below="@+id/backBT"
-        android:layout_marginLeft="@dimen/_204sdp"
         android:layout_marginStart="@dimen/_204sdp"
         android:layout_toEndOf="@+id/cloud1IV"
-        android:layout_toRightOf="@+id/cloud1IV"
         android:src="@drawable/cloud7_600"/>
 
     <ImageView
@@ -89,10 +79,8 @@
         android:layout_width="@dimen/_29sdp"
         android:layout_height="@dimen/_20sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="-500dp"
-        android:layout_marginRight="-500dp"
         android:src="@drawable/cloud3_600"/>
 
 
@@ -100,7 +88,6 @@
         android:id="@+id/backBT"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        android:layout_marginLeft="@dimen/_12sdp"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:background="@drawable/back_button_600"/>
@@ -116,7 +103,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:layout_gravity="bottom">
 
             <ImageView
@@ -129,9 +115,7 @@
                 android:layout_width="@dimen/_162sdp"
                 android:layout_height="@dimen/_112sdp"
                 android:layout_alignEnd="@+id/smallBoardIV"
-                android:layout_alignRight="@+id/smallBoardIV"
                 android:layout_marginEnd="@dimen/_12sdp"
-                android:layout_marginRight="@dimen/_12sdp"
                 android:layout_marginTop="@dimen/_16sdp">
 
                 <TextView
@@ -141,6 +125,7 @@
                     android:layout_centerHorizontal="true"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:gravity="center"
+                    android:fontFamily="@font/cabin_sketch_bold"
                     android:text="Draw Number ->"
                     android:textColor="@android:color/white"
                     android:textSize="24sp"/>
@@ -158,8 +143,7 @@
                         android:layout_height="wrap_content"
                         android:layout_alignTop="@+id/dividerLineIV"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginEnd="@dimen/_4sdp"
-                        android:layout_marginRight="@dimen/_4sdp">
+                        android:layout_marginEnd="@dimen/_4sdp">
 
                         <TextView
                             android:id="@+id/numbersTV"
@@ -167,6 +151,7 @@
                             android:layout_height="match_parent"
                             android:layout_centerInParent="true"
                             android:gravity="center"
+                            android:fontFamily="@font/cabin_sketch_bold"
                             android:text="0"
                             android:textColor="@android:color/white"
                             android:textSize="120sp"/>
@@ -185,7 +170,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="@dimen/_4sdp"
                         android:layout_marginStart="@dimen/_4sdp"
                         android:orientation="vertical">
 
@@ -287,7 +271,6 @@
         <RelativeLayout
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
-            android:layout_marginLeft="@dimen/_8sdp"
             android:layout_marginStart="@dimen/_8sdp"
             android:layout_marginTop="@dimen/_1sdp">
 
@@ -301,21 +284,17 @@
                 android:id="@+id/baseLayout"
                 android:layout_width="@dimen/_177sdp"
                 android:layout_height="@dimen/_132sdp"
-                android:layout_marginRight="@dimen/_4sdp"
                 android:layout_marginEnd="@dimen/_4sdp"
                 android:layout_alignTop="@+id/bigBoardIV"
                 android:layout_marginTop="@dimen/_18sdp"
-                android:layout_alignEnd="@+id/bigBoardIV"
-                android:layout_alignRight="@+id/bigBoardIV">
+                android:layout_alignEnd="@+id/bigBoardIV">
 
                 <RelativeLayout
                     android:id="@+id/contentLayoutGameLevel1"
                     android:layout_width="match_parent"
                     android:layout_height="match_parent"
                     android:splitMotionEvents="false"
-                    android:layout_marginRight="@dimen/_5sdp"
                     android:layout_marginEnd="@dimen/_5sdp"
-                    android:layout_marginLeft="@dimen/_4sdp"
                     android:layout_marginStart="@dimen/_4sdp"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:layout_marginBottom="@dimen/_5sdp">
@@ -328,6 +307,7 @@
                     android:layout_width="wrap_content"
                     android:layout_height="wrap_content"
                     android:layout_centerHorizontal="true"
+                    android:fontFamily="@font/cabin_sketch_bold"
                     android:layout_marginTop="@dimen/_8sdp"
                     android:text="Draw Number Here"
                     android:textColor="@android:color/white"
@@ -344,7 +324,6 @@
                 android:layout_height="@dimen/_12sdp"
                 android:layout_alignBottom="@+id/bigBoardIV"
                 android:layout_marginBottom="@dimen/_72sdp"
-                android:layout_marginLeft="@dimen/_40sdp"
                 android:layout_marginStart="@dimen/_40sdp"
                 android:background="@drawable/duster_button_600"/>
 
@@ -355,9 +334,7 @@
                 android:layout_alignBottom="@+id/bigBoardIV"
                 android:layout_marginBottom="@dimen/_72sdp"
                 android:layout_alignEnd="@+id/bigBoardIV"
-                android:layout_alignRight="@+id/bigBoardIV"
                 android:layout_marginEnd="@dimen/_16sdp"
-                android:layout_marginRight="@dimen/_16sdp"
                 android:background="@drawable/chalk_button_600"/>
 
         </RelativeLayout>
@@ -379,7 +356,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block00_600"/>
 
         <ImageButton
@@ -387,7 +363,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block01_600"/>
 
         <ImageButton
@@ -395,7 +370,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block02_600"/>
 
         <ImageButton
@@ -403,7 +377,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block03_600"/>
 
         <ImageButton
@@ -411,7 +384,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block04_600"/>
 
         <ImageButton
@@ -419,7 +391,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block05_600"/>
 
         <ImageButton
@@ -427,7 +398,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block06_600"/>
 
         <ImageButton
@@ -435,7 +405,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block07_600"/>
 
         <ImageButton
@@ -443,7 +412,6 @@
             android:layout_width="@dimen/_38sdp"
             android:layout_height="@dimen/_38sdp"
             android:layout_marginEnd="@dimen/_8sdp"
-            android:layout_marginRight="@dimen/_8sdp"
             android:background="@drawable/block08_600"/>
 
         <ImageButton

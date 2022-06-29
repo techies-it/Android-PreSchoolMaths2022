@@ -18,7 +18,6 @@
         android:id="@+id/backBT"
         android:layout_width="@dimen/_35sdp"
         android:layout_height="@dimen/_35sdp"
-        android:layout_marginLeft="@dimen/_12sdp"
         android:layout_marginStart="@dimen/_12sdp"
         android:layout_marginTop="@dimen/_12sdp"
         android:background="@drawable/back_button_600"/>
@@ -35,7 +34,6 @@
             android:layout_height="@dimen/_197sdp"
             android:layout_gravity="center_vertical"
             android:layout_marginEnd="@dimen/_24sdp"
-            android:layout_marginRight="@dimen/_24sdp"
             android:src="@drawable/cyl_600"/>
 
         <LinearLayout
@@ -55,7 +53,6 @@
                     android:layout_width="@dimen/_89sdp"
                     android:layout_height="@dimen/_120sdp"
                     android:layout_marginEnd="@dimen/_16sdp"
-                    android:layout_marginRight="@dimen/_16sdp"
                     android:background="@drawable/level1_button_600"/>
 
                 <ImageButton
@@ -76,7 +73,6 @@
                     android:layout_width="@dimen/_89sdp"
                     android:layout_height="@dimen/_120sdp"
                     android:layout_marginEnd="@dimen/_16sdp"
-                    android:layout_marginRight="@dimen/_16sdp"
                     android:background="@drawable/level3_button_600"/>
 
                 <ImageButton

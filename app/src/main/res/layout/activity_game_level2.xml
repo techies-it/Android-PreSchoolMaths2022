@@ -16,11 +16,9 @@
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:layout_alignParentTop="true"
-        android:layout_marginLeft="@dimen/_56sdp"
         android:layout_marginStart="@dimen/_56sdp"
         android:layout_marginTop="-50dp"
-        android:layout_toEndOf="@+id/backBT"
-        android:layout_toRightOf="@+id/backBT">
+        android:layout_toEndOf="@+id/backBT">
 
         <ImageView
             android:id="@+id/sunRaysIV"
@@ -45,9 +43,7 @@
         android:layout_height="@dimen/_35sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_marginEnd="-600dp"
-        android:layout_marginRight="-600dp"
         android:src="@drawable/cloud1_320"/>
 
     <ImageView
@@ -56,10 +52,8 @@
         android:layout_height="@dimen/_32sdp"
         android:layout_alignBottom="@+id/backBT"
         android:layout_marginBottom="@dimen/_16sdp"
-        android:layout_marginLeft="@dimen/_88sdp"
         android:layout_marginStart="@dimen/_88sdp"
         android:layout_toEndOf="@+id/cloud0IV"
-        android:layout_toRightOf="@+id/cloud0IV"
         android:src="@drawable/cloud2_320"/>
 
     <ImageView
@@ -67,10 +61,8 @@
         android:layout_width="@dimen/_43sdp"
         android:layout_height="@dimen/_29sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_below="@+id/cloud0IV"
         android:layout_marginEnd="-300dp"
-        android:layout_marginRight="-300dp"
         android:src="@drawable/cloud2_320"/>
 
     <ImageView
@@ -78,10 +70,8 @@
         android:layout_width="@dimen/_48sdp"
         android:layout_height="@dimen/_28sdp"
         android:layout_below="@+id/backBT"
-        android:layout_marginLeft="@dimen/_204sdp"
         android:layout_marginStart="@dimen/_204sdp"
         android:layout_toEndOf="@+id/cloud1IV"
-        android:layout_toRightOf="@+id/cloud1IV"
         android:src="@drawable/cloud1_320"/>
 
     <ImageView
@@ -89,10 +79,8 @@
         android:layout_width="@dimen/_42sdp"
         android:layout_height="@dimen/_34sdp"
         android:layout_alignParentEnd="true"
-        android:layout_alignParentRight="true"
         android:layout_centerVertical="true"
         android:layout_marginEnd="-500dp"
-        android:layout_marginRight="-500dp"
         android:src="@drawable/cloud5_320"/>
 
 
@@ -100,7 +88,6 @@
         android:id="@+id/backBT"
         android:layout_width="@dimen/_38sdp"
         android:layout_height="@dimen/_42sdp"
-        android:layout_marginLeft="@dimen/_16sdp"
         android:layout_marginStart="@dimen/_16sdp"
         android:layout_marginTop="@dimen/_22sdp"
         android:background="@drawable/back_button_320"/>
@@ -118,7 +105,6 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_marginEnd="@dimen/_24sdp"
-            android:layout_marginRight="@dimen/_24sdp"
             android:layout_gravity="center_horizontal">
 
             <ImageView
@@ -140,7 +126,6 @@
                     android:layout_width="@dimen/_48sdp"
                     android:layout_height="@dimen/_32sdp"
                     android:layout_marginEnd="@dimen/_32sdp"
-                    android:layout_marginRight="@dimen/_32sdp"
                     android:clickable="false"
                     android:alpha="0.5"
                     android:background="@drawable/previous_button_320"/>
@@ -149,7 +134,6 @@
                     android:id="@+id/btNext"
                     android:layout_width="@dimen/_48sdp"
                     android:layout_height="@dimen/_32sdp"
-                    android:layout_marginLeft="@dimen/_32sdp"
                     android:layout_marginStart="@dimen/_32sdp"
                     android:background="@drawable/next_button_320"/>
 
@@ -167,6 +151,7 @@
                     android:layout_width="@dimen/_68sdp"
                     android:layout_height="wrap_content"
                     android:gravity="center"
+                    android:fontFamily="@font/cabin_sketch_bold"
                     android:layout_centerHorizontal="true"
                     android:text="Count Stars"
                     android:textColor="@android:color/white"
@@ -185,7 +170,6 @@
                         android:layout_width="wrap_content"
                         android:layout_height="wrap_content"
                         android:layout_gravity="center_vertical"
-                        android:layout_marginLeft="@dimen/_4sdp"
                         android:layout_marginStart="@dimen/_4sdp"
                         android:orientation="vertical">
 
@@ -290,8 +274,7 @@
             android:layout_width="wrap_content"
             android:layout_height="wrap_content"
             android:layout_gravity="top"
-            android:layout_marginStart="@dimen/_24sdp"
-            android:layout_marginLeft="@dimen/_24sdp">
+            android:layout_marginStart="@dimen/_24sdp">
 
             <ImageView
                 android:id="@+id/bigBoardIV"
@@ -328,7 +311,6 @@
                 android:layout_height="@dimen/_20sdp"
                 android:layout_alignBottom="@+id/bigBoardIV"
                 android:layout_marginBottom="@dimen/_15sdp"
-                android:layout_marginLeft="@dimen/_24sdp"
                 android:layout_marginStart="@dimen/_24sdp"
                 android:background="@drawable/duster_button_320"/>
 
@@ -338,10 +320,8 @@
                 android:layout_height="@dimen/_32sdp"
                 android:layout_alignBottom="@+id/bigBoardIV"
                 android:layout_alignEnd="@+id/bigBoardIV"
-                android:layout_alignRight="@+id/bigBoardIV"
                 android:layout_marginBottom="@dimen/_16sdp"
                 android:layout_marginEnd="@dimen/_24sdp"
-                android:layout_marginRight="@dimen/_24sdp"
                 android:background="@drawable/chalk_button_320"/>
 
         </RelativeLayout>
@@ -364,12 +344,11 @@
         android:layout_height="wrap_content"
         android:layout_centerHorizontal="true"
         android:layout_marginTop="16dp"
+        android:fontFamily="@font/cabin_sketch_bold"
         android:text="Draw Number Here"
         android:textColor="@android:color/white"
         android:textSize="24sp"
         android:visibility="gone"/>
-
-
 
 
 </RelativeLayout>
