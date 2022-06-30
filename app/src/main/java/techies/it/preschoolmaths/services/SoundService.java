@@ -5,12 +5,11 @@ import android.content.Intent;
 import android.content.res.AssetFileDescriptor;
 import android.media.MediaPlayer;
 import android.os.IBinder;
-
-import androidx.annotation.Nullable;
+import android.util.Log;
 
 import java.io.IOException;
 
-import timber.log.Timber;
+import androidx.annotation.Nullable;
 
 /**
  * Created by Compaq123 on 14-Apr-16.
@@ -19,6 +18,7 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
         MediaPlayer.OnPreparedListener
 {
 
+    private String tag = "SoundService";
     private MediaPlayer mPlayer;
 
     int CHEERS_SOUND = 1;
@@ -29,8 +29,8 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
     @Override
     public int onStartCommand(Intent intent, int flags, int startId)
     {
-        Timber.d("onStartCommand(int flags, int startId)");
-        Timber.d("onStartCommand(int %d, int %d)", flags, startId);
+        Log.d(tag, "onStartCommand(int flags, int startId)");
+       // Log.isLoggable(tag,"onStartCommand(int %d, int %d)", flags, startId);
 
         int sound = (int) intent.getExtras().get("Sound_To_Play");
 
@@ -51,8 +51,8 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
     public void onCreate()
     {
         super.onCreate();
-        Timber.tag(TAG);
-        Timber.d("onCreate()");
+        /*Timber.tag(TAG);
+        Log.d(tag,"onCreate()");*/
 
     }
 
@@ -84,13 +84,13 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
         {
             AssetFileDescriptor afd = getAssets().openFd("sound/cheers.mp3");
             mPlayer.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
-            Timber.d("prepareAsync()");
+            Log.d(tag,"prepareAsync()");
             mPlayer.prepareAsync();
 
         }
         catch (IOException e)
         {
-            Timber.e(e, "Media Player");
+            Log.e(TAG, "Media Player", e);
         }
     }
 
@@ -112,13 +112,13 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
         {
             AssetFileDescriptor afd = getAssets().openFd("sound/aww.mp3");
             mPlayer.setDataSource(afd.getFileDescriptor(), afd.getStartOffset(), afd.getLength());
-            Timber.d("prepareAsync()");
+            Log.d(tag,"prepareAsync()");
             mPlayer.prepareAsync();
 
         }
         catch (IOException e)
         {
-            Timber.e(e, "Media Player");
+            Log.e(TAG, "Media Player", e);
         }
     }
 
@@ -128,7 +128,7 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
         super.onDestroy();
 
 
-        Timber.d("onDestroy()");
+        Log.d(tag,"onDestroy()");
 
         if (mPlayer != null)
         {
@@ -148,7 +148,7 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
     @Override
     public void onCompletion(MediaPlayer mp)
     {
-        Timber.d("onCompletion()");
+        Log.d(tag,"onCompletion()");
 
         stopSelf();
     }
@@ -156,7 +156,7 @@ public class SoundService extends Service implements MediaPlayer.OnCompletionLis
     @Override
     public void onPrepared(MediaPlayer mp)
     {
-        Timber.d("onPrepared()");
+        Log.d(tag,"onPrepared()");
         mp.start();
     }
 

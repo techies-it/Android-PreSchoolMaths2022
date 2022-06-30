@@ -18,6 +18,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
     var view: View? = null
     
     override fun onCreate(savedInstanceState: Bundle?) {
+        setTheme(R.style.AppTheme_FullScreen)
         super.onCreate(savedInstanceState)
         binding = ActivityMainBinding.inflate(layoutInflater)
         view = binding.root

@@ -179,26 +179,31 @@ class GameLevel4 : AppCompatActivity(), View.OnClickListener {
             val text2 = binding.number2.text.toString().trim { it <= ' ' }.toInt()
             val text3 = binding.number3.text.toString().trim { it <= ' ' }.toInt()
             val text4 = binding.number4.text.toString().trim { it <= ' ' }.toInt()
-            if (number == text1) {
-                binding.number1.setTextColor(Color.parseColor("#00ff00"))
-                binding.number2.setTextColor(Color.parseColor("#ffffff"))
-                binding.number3.setTextColor(Color.parseColor("#ffffff"))
-                binding.number4.setTextColor(Color.parseColor("#ffffff"))
-            } else if (number == text2) {
-                binding.number1.setTextColor(Color.parseColor("#ffffff"))
-                binding.number2.setTextColor(Color.parseColor("#00ff00"))
-                binding.number3.setTextColor(Color.parseColor("#ffffff"))
-                binding.number4.setTextColor(Color.parseColor("#ffffff"))
-            } else if (number == text3) {
-                binding.number1.setTextColor(Color.parseColor("#ffffff"))
-                binding.number2.setTextColor(Color.parseColor("#ffffff"))
-                binding.number3.setTextColor(Color.parseColor("#00ff00"))
-                binding.number4.setTextColor(Color.parseColor("#ffffff"))
-            } else if (number == text4) {
-                binding.number1.setTextColor(Color.parseColor("#ffffff"))
-                binding.number2.setTextColor(Color.parseColor("#ffffff"))
-                binding.number3.setTextColor(Color.parseColor("#ffffff"))
-                binding.number4.setTextColor(Color.parseColor("#00ff00"))
+            when (number) {
+                text1 -> {
+                    binding.number1.setTextColor(Color.parseColor("#00ff00"))
+                    binding.number2.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number3.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number4.setTextColor(Color.parseColor("#ffffff"))
+                }
+                text2 -> {
+                    binding.number1.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number2.setTextColor(Color.parseColor("#00ff00"))
+                    binding.number3.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number4.setTextColor(Color.parseColor("#ffffff"))
+                }
+                text3 -> {
+                    binding.number1.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number2.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number3.setTextColor(Color.parseColor("#00ff00"))
+                    binding.number4.setTextColor(Color.parseColor("#ffffff"))
+                }
+                text4 -> {
+                    binding.number1.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number2.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number3.setTextColor(Color.parseColor("#ffffff"))
+                    binding.number4.setTextColor(Color.parseColor("#00ff00"))
+                }
             }
         }
     }

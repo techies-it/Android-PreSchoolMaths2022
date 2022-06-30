@@ -14,10 +14,11 @@
         android:roundIcon="@drawable/launcher_600"
         android:supportsRtl="true"
         android:alwaysRetainTaskState="true"
-        android:theme="@style/AppTheme.NoActionBar">
+        android:theme="@style/Theme.PreSchoolMath">
         <activity
             android:name=".ui.MainActivity"
             android:screenOrientation="sensorLandscape"
+            android:theme="@style/AppTheme.BrandedLaunch"
             android:exported="true">
             <intent-filter>
                 <action android:name="android.intent.action.MAIN"/>
@@ -30,7 +31,7 @@
             android:alwaysRetainTaskState="true"
             android:parentActivityName=".ui.MainActivity"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.FullScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity"/>
@@ -40,7 +41,7 @@
             android:alwaysRetainTaskState="true"
             android:parentActivityName=".ui.GameLevels"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.FullScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.GameLevels"/>
@@ -50,7 +51,7 @@
             android:alwaysRetainTaskState="true"
             android:parentActivityName=".ui.GameLevels"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.FullScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.GameLevels"/>
@@ -60,7 +61,7 @@
             android:alwaysRetainTaskState="true"
             android:parentActivityName=".ui.GameLevels"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.FullScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.GameLevels"/>
@@ -73,7 +74,7 @@
             android:alwaysRetainTaskState="true"
             android:parentActivityName=".ui.GameLevels"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.FullScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.GameLevels"/>
@@ -83,7 +84,7 @@
             android:alwaysRetainTaskState="true"
             android:parentActivityName=".ui.MainActivity"
             android:screenOrientation="sensorLandscape"
-            android:theme="@style/AppTheme.NoActionBar">
+            android:theme="@style/AppTheme.FullScreen">
             <meta-data
                 android:name="android.support.PARENT_ACTIVITY"
                 android:value=".ui.MainActivity"/>
