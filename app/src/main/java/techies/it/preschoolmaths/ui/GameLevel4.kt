@@ -1,32 +1,23 @@
 package techies.it.preschoolmaths.ui
 
-import techies.it.preschoolmaths.ui.GameLevel1.Companion.brushSize
-import androidx.appcompat.app.AppCompatActivity
-import techies.it.preschoolmaths.utils.DrawingView
-import butterknife.Bind
-import techies.it.preschoolmaths.R
-import android.widget.ImageButton
-import android.widget.TextView
-import android.widget.RelativeLayout
-import android.view.animation.Animation
-import android.annotation.TargetApi
+import android.annotation.SuppressLint
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffXfermode
 import android.os.Build
 import android.os.Bundle
-import android.view.View.OnSystemUiVisibilityChangeListener
-import android.view.WindowManager
-import butterknife.ButterKnife
-import techies.it.preschoolmaths.ui.GameLevel1
-import techies.it.preschoolmaths.utils.DrawingView.BtnEnableListener
-import android.annotation.SuppressLint
-import android.graphics.*
 import android.view.View
+import android.view.animation.Animation
 import android.view.animation.AnimationUtils
-import android.widget.ImageView
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import techies.it.preschoolmaths.databinding.ActivityGameLevel2Binding
+import techies.it.preschoolmaths.R
 import techies.it.preschoolmaths.databinding.ActivityGameLevel4Binding
+import techies.it.preschoolmaths.ui.GameLevel1.Companion.brushSize
+import techies.it.preschoolmaths.utils.DrawingView
 
 class GameLevel4 : AppCompatActivity(), View.OnClickListener {
     private lateinit var binding: ActivityGameLevel4Binding

@@ -9,7 +9,6 @@ import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
-import butterknife.ButterKnife
 import techies.it.preschoolmaths.R
 import techies.it.preschoolmaths.databinding.ActivityMainBinding
 
@@ -23,8 +22,7 @@ class MainActivity : AppCompatActivity(), View.OnClickListener {
         binding = ActivityMainBinding.inflate(layoutInflater)
         view = binding.root
         setContentView(view)
-        
-        ButterKnife.bind(this)
+
         binding.btPlay.setOnClickListener(this)
         binding.instructions.setOnClickListener(this)
     }

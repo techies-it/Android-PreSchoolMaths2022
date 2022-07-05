@@ -1,22 +1,24 @@
 package techies.it.preschoolmaths.ui
 
-import androidx.appcompat.app.AppCompatActivity
-import android.view.animation.Animation
-import techies.it.preschoolmaths.utils.DrawingView
-import techies.it.preschoolmaths.R
-import android.os.Build
-import android.os.Bundle
-import butterknife.ButterKnife
 import android.annotation.SuppressLint
 import android.content.Context
-import android.graphics.*
+import android.graphics.Color
+import android.graphics.Paint
+import android.graphics.PorterDuff
+import android.graphics.PorterDuffXfermode
+import android.os.Build
+import android.os.Bundle
 import android.util.Log
 import android.view.View
+import android.view.animation.Animation
 import android.view.animation.AnimationUtils
+import androidx.appcompat.app.AppCompatActivity
 import androidx.core.view.WindowCompat
 import androidx.core.view.WindowInsetsCompat
 import androidx.core.view.WindowInsetsControllerCompat
+import techies.it.preschoolmaths.R
 import techies.it.preschoolmaths.databinding.ActivityGameLevel1Binding
+import techies.it.preschoolmaths.utils.DrawingView
 
 class GameLevel1 : AppCompatActivity(), View.OnClickListener, Animation.AnimationListener {
     private lateinit var binding: ActivityGameLevel1Binding
