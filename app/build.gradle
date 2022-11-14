@@ -4,19 +4,19 @@ apply plugin: 'kotlin-android'
 android {
     signingConfigs {
         debug {
-            storeFile file('/home/androidtaran/TaranWork/OfficeProjects/2022/Pre School Maths/PreSchoolMaths/PreSchoolMaths.jks')
+            storeFile file('/home/android/TaranWork/OfficeProjects/2022/Pre School Maths/PreSchoolMaths/PreSchoolMaths.jks')
             storePassword '12345678'
             keyAlias 'preschoolmath'
             keyPassword '12345678'
         }
     }
-    compileSdkVersion 32
+    compileSdkVersion 33
     //buildToolsVersion '28.0.3'
 
     defaultConfig {
         applicationId "it.techies.preschoolmaths"
         minSdkVersion 21
-        targetSdkVersion 32
+        targetSdkVersion 33
         versionCode 12
         versionName "1.12"
     }
